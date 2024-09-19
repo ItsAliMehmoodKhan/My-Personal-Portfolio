@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .futuristic-card {
+            background-color: teal;
+            border: 2px solid coral;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+        .futuristic-card:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0px 8px 16px rgba(255, 105, 97, 0.5);
+        }
+        .futuristic-btn {
+            background-color: teal;
+            color: rgb(255, 255, 255);
+            border: 2px solid coral;
+            transition: transform 0.4s ease-in-out, background-color 0.4s;
+        }
+        .futuristic-btn:hover {
+            background-color: coral;
+            transform: scale(1.1) rotate(2deg);
+        }
+    </style>
+</head>
+<body class="bg-teal-700 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="p-4 bg-teal-800">
+        <div class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-3xl font-bold glow-text text-blue-500">My Portfolio</a>
+            <div>
+                <a href="index.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Home</a>
+                <a href="about.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">About</a>
+                <a href="projects.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Projects</a>
+                <a href="skills.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Skills</a>
+                <a href="contact.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container mx-auto p-8">
+        <h1 class="text-5xl font-bold text-coral mb-6 text-blue-500">About Me</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Who Am I? -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">Who Am I?</h2>
+                <p>I am a passionate software engineer and full-stack developer, with expertise in building dynamic web applications using modern technologies. My journey in tech started with a fascination for coding, which has evolved into a career driven by curiosity and a desire to solve real-world problems.</p>
+            </div>
+            <!-- My Vision -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">My Vision</h2>
+                <p>My goal is to create cutting-edge solutions with a futuristic approach, focusing on innovation, efficiency, and creativity in every project. I strive to leverage the latest technologies and methodologies to develop impactful software that enhances user experiences and addresses complex challenges.</p>
+            </div>
+            <!-- My Skills -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">My Skills</h2>
+                <p>With a strong foundation in full-stack development, I am proficient in various programming languages and frameworks including JavaScript, C++, HTML, CSS, and React. My experience spans across both front-end and back-end technologies, allowing me to build and maintain robust applications.</p>
+            </div>
+            <!-- My Journey -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">My Journey</h2>
+                <p>Throughout my career, I have worked on numerous projects that have honed my skills and broadened my perspective. From developing web applications to participating in challenging programming projects, my journey has been both rewarding and educational.</p>
+            </div>
+            <!-- Professional Achievements -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">Professional Achievements</h2>
+                <p>My achievements include successfully deploying multiple web applications, contributing to open-source projects, and continually enhancing my skills through ongoing learning and professional development. These accomplishments reflect my dedication and commitment to excellence in software engineering.</p>
+            </div>
+            <!-- Personal Interests -->
+            <div class="futuristic-card p-6 text-gray-100">
+                <h2 class="text-3xl font-bold mb-4">Personal Interests</h2>
+                <p>Outside of work, I enjoy reading, playing football, and hiking. These activities not only provide relaxation but also inspire creativity and balance in my life. Engaging in diverse interests helps me maintain a well-rounded perspective and enhances my problem-solving abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-800 text-center p-4 text-blue-500">
+        <p>&copy; 2024 Ali Khan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

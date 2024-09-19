@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            background-color: teal;
+            border: 2px solid coral;
+            border-radius: 12px;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(255, 105, 97, 0.5);
+        }
+        .project-image {
+            border-bottom: 2px solid coral;
+        }
+        .project-image img {
+            border-radius: 12px 12px 0 0;
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .project-links a {
+            color: coral;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .project-links a:hover {
+            color: white;
+        }
+        /* Navbar styles */
+        .futuristic-btn {
+            background-color: teal;
+            color: rgb(255, 255, 255);
+            border: 2px solid coral;
+            transition: transform 0.4s ease-in-out, background-color 0.4s;
+        }
+        .futuristic-btn:hover {
+            background-color: coral;
+            transform: scale(1.1) rotate(2deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700">
+
+    <!-- Navbar -->
+    <nav class="p-4 bg-teal-800">
+        <div class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-3xl font-bold text-blue-500">My Portfolio</a>
+            <div>
+                <a href="index.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Home</a>
+                <a href="about.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">About</a>
+                <a href="projects.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Projects</a>
+                <a href="skills.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Skills</a>
+                <a href="contact.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="container mx-auto p-8">
+        <h1 class="text-5xl font-bold text-coral mb-6 text-blue-500">My Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project Card 1: Weather App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/images/weather app.png" alt="Weather App" class="w-full h-48 object-cover">
+                </div>
+                <div class="project-content">
+                    <h2 class="text-2xl font-bold text-gray-100">Weather App</h2>
+                    <p class="mt-2">A weather app built using HTML, CSS, and JavaScript with API integration to provide real-time weather updates.</p>
+                    <p class="mt-2 text-sm text-gray-400">Technologies Used: HTML, CSS, JavaScript</p>
+                    <div class="project-links mt-4">
+                        <a href="https://github.com/ItsAliMehmoodKhan/weather-app" target="_blank" class="mr-4">GitHub</a>
+                        <!-- Add a link to the live demo if available -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Fitness App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/images/fitness app.png" alt="Fitness App" class="w-full h-48 object-cover">
+                </div>
+                <div class="project-content">
+                    <h2 class="text-2xl font-bold text-gray-100">Fitness App</h2>
+                    <p class="mt-2">A fitness app developed using advanced C++, designed to track workouts and progress with an intuitive user interface.</p>
+                    <p class="mt-2 text-sm text-gray-400">Technologies Used: C++</p>
+                    <div class="project-links mt-4">
+                        <a href="https://github.com/ItsAliMehmoodKhan/fitness-app" target="_blank" class="mr-4">GitHub</a>
+                        <!-- Add a link to the live demo if available -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Battleship Game -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/images/battleship.png" alt="Battleship Game" class="w-full h-48 object-cover">
+                </div>
+                <div class="project-content">
+                    <h2 class="text-2xl font-bold text-gray-100">Battleship Game</h2>
+                    <p class="mt-2">A classic Battleship game implemented in C++, featuring gameplay with an engaging and interactive interface.</p>
+                    <p class="mt-2 text-sm text-gray-400">Technologies Used: C++</p>
+                    <div class="project-links mt-4">
+                        <a href="https://github.com/ItsAliMehmoodKhan/battleship-game" target="_blank" class="mr-4">GitHub</a>
+                        <!-- Add a link to the live demo if available -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-800 text-center p-4 text-blue-500">
+        <p>&copy; 2024 Ali Khan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .futuristic-btn {
+            background-color: teal;
+            color: rgb(255, 255, 255);
+            border: 2px solid coral;
+            transition: transform 0.4s ease-in-out, background-color 0.4s;
+        }
+        .futuristic-btn:hover {
+            background-color: coral;
+            transform: scale(1.1) rotate(2deg);
+        }
+        .glow-text {
+            color: coral;
+            animation: glow 1.5s infinite;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px coral, 0 0 20px coral, 0 0 30px teal; }
+            100% { text-shadow: 0 0 20px coral, 0 0 30px teal, 0 0 40px teal; }
+        }
+        .bio-section img {
+            border-radius: 50%;
+            border: 5px solid coral;
+        }
+        .gallery-item {
+            background-color: teal;
+            border: 2px solid coral;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: white;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(255, 105, 97, 0.5);
+        }
+        .hero-section {
+            background: url('/images/software-development-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+        }
+        body {
+            background-color: #ffffff; /* Soft beige background */
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="p-4 bg-teal-800">
+        <div class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-3xl font-bold text-blue-500">My Portfolio</a>
+            <div>
+                <a href="index.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Home</a>
+                <a href="about.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">About</a>
+                <a href="projects.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Projects</a>
+                <a href="skills.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Skills</a>
+                <a href="contact.html" class="mx-4 futuristic-btn px-4 py-2 text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-6xl font-bold text-blue-500 mb-6">Welcome. I am Ali Khan, a MERN Stack and Software Developer.</h1>
+            <p class="text-xl mb-6 text-blue-500">Explore my projects, skills, and professional journey.</p>
+            <a href="projects.html" class="futuristic-btn px-6 py-3">View Projects</a>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="container mx-auto p-8 text-center">
+        <div class="bio-section mb-8">
+            <img src="/images/IMG-20240907-WA0253.jpg" alt="Ali Khan" class="w-40 h-40 mx-auto mb-4">
+            <h2 class="text-4xl font-bold text-coral mb-2 text-blue-500">About Me</h2>
+            <p class="text-xl mb-4 text-blue-500">I am a passionate software developer with a keen interest in full-stack development, particularly with the MERN stack. My career goals include advancing my skills in software engineering and contributing to innovative tech projects that make a positive impact.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-4xl font-bold text-coral text-center mb-6 text-blue-500">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Debating -->
+            <div class="gallery-item p-4">
+                <img src="/images/debate.png" alt="Debating" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">Debating</h3>
+                <p>Engaged in college debating for two years, honing public speaking and argumentation skills.</p>
+            </div>
+
+            <!-- Leadership and Public Speaking -->
+            <div class="gallery-item p-4">
+                <img src="/images/speech.png" alt="Leadership & Public Speaking" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">Leadership & Public Speaking</h3>
+                <p>Developed leadership and public speaking skills through various speech competitions during 2 years of college.</p>
+            </div>
+
+            <!-- Reading Books -->
+            <div class="gallery-item p-4">
+                <img src="/images/book.png" alt="Reading Books" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">Reading Books</h3>
+                <p>Avid reader with a broad interest in fiction, non-fiction, and technical literature.</p>
+            </div>
+
+            <!-- Playing Football -->
+            <div class="gallery-item p-4">
+                <img src="/images/fb.png" alt="Playing Football" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">Playing Football</h3>
+                <p>Enjoy playing football as a means of staying active and fostering teamwork.</p>
+            </div>
+
+            <!-- Hiking -->
+            <div class="gallery-item p-4">
+                <img src="/images/hike.png" alt="Hiking" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">Hiking</h3>
+                <p>Passionate about hiking and exploring nature, which helps in maintaining a balanced lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-800 text-center p-4 text-blue-500">
+        <p>&copy; 2024 Ali Khan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
